@@ -1,0 +1,57 @@
+@import './normalize/normalize.scss';
+@import './components/button.scss';
+@import './variable.scss';
+@import './views/books.scss';
+.header {
+	background-color: #1b3764;
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&-left {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 2.375rem;
+			&__icons {
+				display: flex;
+				gap: 0.625rem;
+				.icons-wrapper {
+					padding: 16px;
+					background-color: #fff;
+
+					img {
+						background-color: #fff;
+						width: 15px;
+						height: 15px;
+					}
+				}
+			}
+		}
+		&-right {
+			display: flex;
+			align-items: center;
+			gap: 3.188rem;
+			ul {
+				display: flex;
+				gap: 3rem;
+				li {
+					a {
+						color: $mainColor;
+						font-family: 'Inter';
+						font-weight: 400;
+						font-size: 17px;
+						line-height: 26px;
+						letter-spacing: 0.17px;
+						&:focus {
+							color: $thirdColor;
+						}
+					}
+					.child {
+						margin-right: 12px;
+					}
+				}
+			}
+		}
+	}
+}
