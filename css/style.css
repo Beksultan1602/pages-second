@@ -373,3 +373,106 @@ button {
   -webkit-transform: rotate(-45deg) translate(0, -12.5px);
           transform: rotate(-45deg) translate(0, -12.5px);
 }
+.header .main-page {
+  margin-top: 7.563rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .main-page__left h4 {
+  font-weight: 400;
+  font-size: 1.313rem;
+  line-height: 2.25rem;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.header .main-page__left h1 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.625rem;
+  letter-spacing: 1.3px;
+  color: #ffffff;
+  margin: 0.938rem 0 1.75rem 0;
+}
+.header .main-page__left__subtitle {
+  margin-bottom: 2.188rem;
+}
+.header .main-page__left__subtitle p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #b4c7e7;
+}
+.header .main-page__left__btn span {
+  margin-left: 3.188rem;
+  font-weight: 400;
+  font-size: 1.188rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.38px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.header .main-page__left__info {
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.75rem;
+}
+.header .main-page__left__info .pages-info span {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.813rem;
+  letter-spacing: 0.48px;
+  color: #ffffff;
+}
+.header .main-page__left__info .pages-info span::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #ffca42;
+  display: inline-block;
+  margin-right: 0.625rem;
+}
+.header .main-page__left__info .pages-info-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.188rem;
+}
+@media screen and (max-width: 992px) {
+  .header .main-page__left__info .pages-info-right {
+    display: none;
+  }
+}
+.header .main-page__left__info .pages-info-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+.header .main-page__left__info .pages-info-right ul li a {
+  color: #f6f8fc;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.17px;
+}
+.header .main-page__left__info .pages-info-right ul li a:focus {
+  color: #ffca42;
+}
+.header .main-page__left__info .pages-info-right ul li .child {
+  margin-right: 12px;
+}
