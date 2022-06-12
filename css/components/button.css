@@ -2,4 +2,15 @@
   padding: 1.125rem 3.25rem;
   background-color: #ffca42;
   border: none;
+  color: #1b3764;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: 0.57px;
+  white-space: nowrap;
+}
+.btn:hover {
+  background-color: #fff;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }

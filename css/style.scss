@@ -3,11 +3,12 @@
 @import './variable.scss';
 @import './views/books.scss';
 .header {
-	background-color: #1b3764;
+	background-color: $secondColor;
 	.nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		height: 109px;
 		&-left {
 			display: flex;
 			align-items: center;
@@ -16,6 +17,9 @@
 			&__icons {
 				display: flex;
 				gap: 0.625rem;
+				@media screen and (max-width: 1200px) {
+					display: none;
+				}
 				.icons-wrapper {
 					padding: 16px;
 					background-color: #fff;
@@ -32,9 +36,13 @@
 			display: flex;
 			align-items: center;
 			gap: 3.188rem;
+			@media screen and (max-width: 992px) {
+				display: none;
+			}
 			ul {
 				display: flex;
 				gap: 3rem;
+
 				li {
 					a {
 						color: $mainColor;
@@ -49,6 +57,75 @@
 					}
 					.child {
 						margin-right: 12px;
+					}
+				}
+			}
+		}
+		&-mobile {
+			display: none;
+			position: absolute;
+			width: 100%;
+			height: auto;
+			background-color: $secondColor;
+			color: #fff;
+			padding: 1rem 0;
+			left: 0;
+			top: 109px;
+			transition: 0.2s ease-in;
+			ul {
+				text-align: center;
+				li {
+					padding: 1rem 0;
+				}
+				hr {
+					width: 40%;
+					margin: 0 auto;
+				}
+			}
+		}
+		.mobile-icons {
+			display: none;
+			align-items: center;
+			justify-content: center;
+			gap: 50px;
+			margin-top: 20px;
+			@media screen and (max-width: 1200px) {
+				display: flex;
+			}
+			img {
+				background-color: #fff;
+				padding: 15px;
+			}
+		}
+		.hamb {
+			@media screen and (max-width: 992px) {
+				display: flex;
+				align-items: center;
+			}
+			.hamb__field {
+				cursor: pointer;
+				.bar {
+					@media screen and (max-width: 992px) {
+						display: block;
+						width: 30px;
+						height: 3px;
+						margin: 6px auto;
+						background-color: #fff;
+						transition: 0.2s ease-in;
+					}
+				}
+				&.active {
+					.bar {
+						transition: transform 0.2s ease-in;
+						&:first-child {
+							transform: rotate(45deg) translate(0, 12.5px);
+						}
+						&:nth-child(2) {
+							opacity: 0;
+						}
+						&:nth-child(3) {
+							transform: rotate(-45deg) translate(0, -12.5px);
+						}
 					}
 				}
 			}
