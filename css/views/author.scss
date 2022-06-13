@@ -1,0 +1,78 @@
+@import '../variable.scss';
+.about_author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 162px;
+    margin-top: 260px;
+    &-left {
+      img{
+     position: relative;
+     top: -85px;
+      }
+    }
+    &-right {
+      h2 {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 50px;
+        text-transform: capitalize;
+        color: $secondColor;
+      }
+      
+      .title {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 34px;
+        color: #969aa0;
+        margin: 59px 0 34px 0;
+      }
+      &__books {
+        display: flex;
+        gap: 46px;
+        &__info {
+          span {
+            font-weight: 400;
+            font-size: 54px;
+            line-height: 77px;
+            color: $secondColor;
+          }
+          p {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            color: #969aa0;
+          }
+        }
+      }
+      &-qrcode {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        width: 484px;
+        height: 161px;
+        background: $secondColor;
+        margin-top: 55px;
+        img {
+          margin: 15px 0 16px 20px;
+        }
+        &-title{
+        h5 {
+          max-width: 216px;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 26px;
+          color: #ffca42;
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0.19px;
+          color: #b4c7e7;
+        }
+      }
+      }
+    }
+  }
+  
