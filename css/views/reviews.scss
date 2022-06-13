@@ -1,0 +1,116 @@
+@import '../variable.scss';
+.reviews {
+	margin-top: 130px;
+	.reviews-main {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		@media screen and (max-width: 1200px) {
+			flex-direction: column;
+		}
+		&__left {
+			max-width: 435px;
+			width: 100%;
+			@media screen and (max-width: 1200px) {
+				max-width: max-content;
+				width: 100%;
+			}
+			h2 {
+				font-family: $font;
+				font-weight: 400;
+				font-size: 42px;
+				line-height: 50px;
+				text-transform: capitalize;
+				color: $secondColor;
+			}
+			hr {
+				background-color: $thirdColor;
+				width: 50px;
+				margin-top: 23px;
+				margin-bottom: 33px;
+				border: $thirdColor 1px solid;
+				@media screen and (max-width: 1200px) {
+					display: none;
+				}
+			}
+			p {
+				font-weight: 400;
+				font-size: 19px;
+				line-height: 34px;
+				color: #969aa0;
+				margin-bottom: 14px;
+				@media screen and (max-width: 1200px) {
+					display: none;
+				}
+			}
+			.stars {
+				@media screen and (max-width: 1200px) {
+					display: none;
+				}
+			}
+			span {
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 28px;
+				color: $secondColor;
+				@media screen and (max-width: 1200px) {
+					display: none;
+				}
+			}
+		}
+		&__right {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			@media screen and (max-width: 992px) {
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+			}
+			.reviews-cards {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				&__items {
+					background-color: $secondColor;
+					padding: 35px;
+
+					span {
+						font-family: $font;
+						margin-bottom: 13px;
+						font-weight: 400;
+						font-size: 22px;
+						line-height: 33px;
+						color: #ffffff;
+					}
+					p {
+						font-family: 'Inter';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 18px;
+						line-height: 29px;
+						/* or 160% */
+
+						color: #b4c7e7;
+					}
+					.reviews-card__top {
+						margin-bottom: 20px;
+						display: flex;
+						gap: 20px;
+						align-items: center;
+						.person {
+							p {
+								font-family: $font;
+								margin-bottom: 15px;
+								font-weight: 400;
+								font-size: 24px;
+								line-height: 29px;
+								color: #ffffff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
