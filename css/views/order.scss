@@ -1,0 +1,70 @@
+@import '../variable.scss';
+.order {
+	background-color: $secondColor;
+	margin-top: 130px;
+	.container {
+		.order-main {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 70px;
+			@media screen and (max-width: 992px) {
+				text-align: center;
+				justify-content: center;
+			}
+			&__left {
+				max-width: 539px;
+				width: 100%;
+				h2 {
+					font-family: $font;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 45px;
+					line-height: 54px;
+					text-transform: capitalize;
+					color: #ffffff;
+				}
+				hr {
+					background-color: $thirdColor;
+					width: 50px;
+					margin: 24px 0;
+					border: $thirdColor 1px solid;
+					@media screen and (max-width: 992px) {
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+				p {
+					font-weight: 400;
+					font-size: 19px;
+					line-height: 28px;
+					color: #b4c7e7;
+					margin-bottom: 27px;
+				}
+				button {
+					padding: 1.125rem 3.25rem;
+					border: 2px $thirdColor solid;
+					color: #fff;
+					font-weight: 400;
+					font-size: 1.188rem;
+					line-height: 1.75rem;
+					letter-spacing: 0.57px;
+					background: none;
+					&:hover {
+						background-color: $thirdColor;
+						transition: 0.2s ease-in;
+					}
+				}
+			}
+			&__right {
+				img {
+					max-width: 560px;
+					width: 100%;
+					@media screen and (max-width: 992px) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
