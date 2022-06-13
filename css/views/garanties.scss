@@ -1,0 +1,59 @@
+@import './normalize/normalize.scss';
+@import './components/button.scss';
+@import './variable.scss';
+.garanties {
+	margin-top: 6.875rem;
+	.garanties-main {
+		h2 {
+			font-family: $font;
+			font-weight: 400;
+			font-size: 2.625rem;
+			line-height: 3.125rem;
+			text-align: center;
+			text-transform: capitalize;
+			color: $secondColor;
+		}
+		hr {
+			background-color: $thirdColor;
+			width: 50px;
+			margin: 0 auto;
+			border: $thirdColor 1px solid;
+			margin-bottom: 4.375rem;
+			margin-top: 1.438rem;
+			margin-bottom: 3.125rem;
+		}
+		&__info {
+			display: flex;
+			gap: 24px;
+			@media screen and (max-width: 992px) {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.garant {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				max-width: 313px;
+				width: 100%;
+				gap: 1.188rem;
+				span {
+					font-family: $font;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 1.5rem;
+					line-height: 1.813rem;
+					text-align: center;
+					color: $secondColor;
+				}
+				p {
+					font-weight: 400;
+					font-size: 1.188rem;
+					line-height: 1.75rem;
+					text-align: center;
+					color: #969aa0;
+				}
+			}
+		}
+	}
+}

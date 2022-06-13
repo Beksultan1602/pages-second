@@ -14,3 +14,8 @@
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
+@media screen and (max-width: 992px) {
+  .btn {
+    padding: 1rem 2.5rem;
+  }
+}

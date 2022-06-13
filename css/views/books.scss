@@ -1,6 +1,10 @@
 @import '../variable.scss';
 .books {
 	background-color: #fff;
+	margin-top: 7.875rem;
+	@media screen and (max-width: 768px) {
+		margin-top: 3rem;
+	}
 	.container {
 		h2 {
 			font-family: $font;
@@ -17,7 +21,7 @@
 			width: 50px;
 			margin: 0 auto;
 			border: $thirdColor 1px solid;
-			margin-bottom: 70px;
+			margin-bottom: 4.375rem;
 			@media screen and (max-width: 576px) {
 				margin: 10px auto;
 			}
@@ -27,11 +31,11 @@
 			justify-content: space-between;
 			@media screen and (max-width: 576px) {
 				flex-wrap: wrap;
-				gap: 30px;
+				gap: 1.875rem;
 			}
 			&__first {
 				display: flex;
-				gap: 30px;
+				gap: 1.875rem;
 				align-items: center;
 				@media screen and (max-width: 992px) {
 					flex-wrap: wrap;
@@ -75,7 +79,7 @@
 						align-items: center;
 						gap: 10px;
 						margin-top: 13px;
-						margin-bottom: 27px;
+						margin-bottom: 1.688rem;
 						@media screen and (max-width: 992px) {
 							justify-content: center;
 						}
@@ -98,8 +102,8 @@
 						border: 2px $thirdColor solid;
 						color: $secondColor;
 						font-weight: 400;
-						font-size: 19px;
-						line-height: 28px;
+						font-size: 1.188rem;
+						line-height: 1.75rem;
 						letter-spacing: 0.57px;
 						background: none;
 						&:hover {

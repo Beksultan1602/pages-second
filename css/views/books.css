@@ -1,5 +1,11 @@
 .books {
   background-color: #fff;
+  margin-top: 7.875rem;
+}
+@media screen and (max-width: 768px) {
+  .books {
+    margin-top: 3rem;
+  }
 }
 .books .container h2 {
   font-family: "Cardo", serif;
@@ -16,7 +22,7 @@
   width: 50px;
   margin: 0 auto;
   border: #ffca42 1px solid;
-  margin-bottom: 70px;
+  margin-bottom: 4.375rem;
 }
 @media screen and (max-width: 576px) {
   .books .container hr {
@@ -35,14 +41,14 @@
   .books .container .authors-books {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
+    gap: 1.875rem;
   }
 }
 .books .container .authors-books__first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -103,7 +109,7 @@
           align-items: center;
   gap: 10px;
   margin-top: 13px;
-  margin-bottom: 27px;
+  margin-bottom: 1.688rem;
 }
 @media screen and (max-width: 992px) {
   .books .container .authors-books__first .about-book .book-type {
@@ -130,8 +136,8 @@
   border: 2px #ffca42 solid;
   color: #1b3764;
   font-weight: 400;
-  font-size: 19px;
-  line-height: 28px;
+  font-size: 1.188rem;
+  line-height: 1.75rem;
   letter-spacing: 0.57px;
   background: none;
 }
