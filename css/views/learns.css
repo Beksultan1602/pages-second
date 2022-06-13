@@ -1,0 +1,55 @@
+.learn .container h2 {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #1b3764;
+  margin: 140px 0 60px 0;
+}
+.learn .container .learn-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 126px;
+}
+.learn .container .learn-main__left-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.learn .container .learn-main__left-items__title {
+  width: 303px;
+  height: 272px;
+  background: #f4f8ff;
+  max-width: 229px;
+  width: 100%;
+}
+.learn .container .learn-main__left-items__title .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffca42;
+  margin: 30px 223px 30px 30px;
+}
+.learn .container .learn-main__left-items__title .circle span {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 29px;
+  color: #1b3764;
+  position: relative;
+  top: 10px;
+  left: 13px;
+}
+.learn .container .learn-main__left-items__title p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #1b3764;
+}
